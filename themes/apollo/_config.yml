@@ -2,7 +2,6 @@
 menu:
   主页: /
   存档: /archives
-rss: /atom.xml
 
 # Content
 fancybox: true
