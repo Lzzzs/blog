@@ -11,3 +11,6 @@ more_link: true
 google_analytics:
 google_analytics_4:
 favicon: images/vercel.png
+
+# Automatically excerpt description in homepage as preamble text.
+excerpt_description: true
