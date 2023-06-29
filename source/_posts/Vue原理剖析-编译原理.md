@@ -19,7 +19,6 @@ tags:
 
 总的来说Vue编译流程有三步：**解析 -> 优化 -> 代码生成**
 
-> src/compiler/index.js
 ```js
 export const createCompiler = createCompilerCreator(
   function baseCompile(
@@ -45,7 +44,34 @@ export const createCompiler = createCompilerCreator(
   }
 );
 
+const { compile, compileToFunctions } = createCompiler(baseOptions)
 ```
+从上面的代码就能看出编译模版的全部过程，但是仔细看发现并不是在这里执行这些代码的，这里只是将`baseCompile`做为参数传入了`createCompilerCreator`函数中。`createCompilerCreator`的返回值并不是一个普通值，而是一个函数。其实这里就是**函数柯里化**的一个体现了。那为什么要这样去设计？
+
+```js
+export function createCompilerCreator(baseCompile: Function): Function {
+  return function createCompiler(baseOptions: CompilerOptions) {
+    function compile(
+      template: string,
+      options?: CompilerOptions
+    ): CompiledResult {
+      // 以平台特有的编译配置为原型创建编译选项对象
+      const finalOptions = Object.create(baseOptions);
+      ...
+    }
+
+    return {
+      compile,
+      compileToFunctions: createCompileToFunctionFn(compile),
+    };
+  };
+}
+```
+因为Vue不单单针对于web平台，它还可以编译weex，也就是说有两个平台。但是两个平台的编译配置可能是不一样的，但是核心流程是不变的，于是采用了**函数柯里化**的方式去实现。先将`baseCompile`确定，然后再根据不同的平台去传入不同的配置，这样就做到了代码的复用，以一种相对优雅的方法去解决平台差异问题，这个思想很值得我们去学习。
+
+那这样的话，如果还有一个平台，那么我们一样直接拿到createCompiler然后传入这个平台的配置就可以很快速的兼容另外一个平台，因为编译过程是不变的，变的只是对于不同的情况做不同的处理。
+
+其实在之后创建 **patch** 函数的地方也用到了**函数柯里化**的技巧和这里的`createCompilerCreator`类似。之后提到 **patch** 的时候会单独拿出来说。
 
 #### 解析
 
