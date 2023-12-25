@@ -20,6 +20,11 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.31.4.tgz#fa5aaeb3e6f3640f6f7625849b724a4d28d662e4"
   integrity sha512-6bBFeDTtPOn4jZaiD3p0f05MEGQL9pw2Zbfj546oFETNmjJFWO3nzHz6/m+P53calknCvyVzZ5YhoBLIvzn5iw==
 
+"@astrojs/compiler@^1.5.5":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.8.2.tgz#f305d5724c45a9932a8ef4e87b2e7227d15d1c2b"
+  integrity sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==
+
 "@astrojs/language-server@^0.28.3":
   version "0.28.3"
   resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-0.28.3.tgz#968472b0e8876bb7583230c745b0f0646a09d510"
@@ -3089,7 +3094,16 @@ preferred-pm@^3.0.3:
     path-exists "^4.0.0"
     which-pm "2.0.0"
 
-prettier-plugin-astro@^0.7.0, prettier-plugin-astro@^0.7.2:
+prettier-plugin-astro@^0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.12.2.tgz#e52d62989cbeb0373714f49debf7f35c21070a39"
+  integrity sha512-1OXSEht27zrnX7rCa0bEpLdspeumFW4hnj4+JzPuG5bRlSOAhD0rbXBNZfRD9q0Qbr00EcCcnjd6k6M8q+GfTA==
+  dependencies:
+    "@astrojs/compiler" "^1.5.5"
+    prettier "^3.0.0"
+    sass-formatter "^0.7.6"
+
+prettier-plugin-astro@^0.7.0:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.7.2.tgz#d761cde54714c6871c731bec179d4cf75e2d86d6"
   integrity sha512-mmifnkG160BtC727gqoimoxnZT/dwr8ASxpoGGl6EHevhfblSOeu+pwH1LAm5Qu1MynizktztFujHHaijLCkww==
@@ -3103,6 +3117,11 @@ prettier@^2.7.1:
   version "2.8.8"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.8.tgz#e8c5d7e98a4305ffe3de2e1fc4aca1a71c28b1da"
   integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
+
+prettier@^3.0.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.1.tgz#6ba9f23165d690b6cbdaa88cb0807278f7019848"
+  integrity sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==
 
 prismjs@^1.28.0:
   version "1.29.0"
@@ -3347,7 +3366,7 @@ safe-buffer@~5.2.0:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
-sass-formatter@^0.7.5:
+sass-formatter@^0.7.5, sass-formatter@^0.7.6:
   version "0.7.8"
   resolved "https://registry.yarnpkg.com/sass-formatter/-/sass-formatter-0.7.8.tgz#7b648f91e502cd783119eee3c8fffea0d4e07265"
   integrity sha512-7fI2a8THglflhhYis7k06eUf92VQuJoXzEs2KRP0r1bluFxKFvLx0Ns7c478oYGM0fPfrr846ZRWVi2MAgHt9Q==
