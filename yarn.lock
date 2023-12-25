@@ -90,12 +90,12 @@
   dependencies:
     prismjs "^1.28.0"
 
-"@astrojs/rss@^2.0.0":
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/@astrojs/rss/-/rss-2.4.4.tgz#b16e75e669c041e1054ffc07821c6a3c29b1820a"
-  integrity sha512-HQFoHyHVoODyeyAFoVPej8OOZowiuXvB5AFIzY4AiPCdwlBz5JGpzW5vPARG/FCqAI9AS3Wi0sU/RZh3Cu8SWQ==
+"@astrojs/rss@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/rss/-/rss-4.0.1.tgz#be87720dbbdeb6e3bf8beac7d0f154758e7cea88"
+  integrity sha512-fzXWsrAp17atO02OZJETM8e8McRz+dNWzMeO7ENb6xgod2nWj5mH/auPBFs1a9FzMUi1nOQmzSPHO1hxZZpkwQ==
   dependencies:
-    fast-xml-parser "^4.2.5"
+    fast-xml-parser "^4.2.7"
     kleur "^4.1.5"
 
 "@astrojs/sitemap@^1.0.0":
@@ -1525,7 +1525,7 @@ fast-glob@^3.2.11, fast-glob@^3.3.0:
     merge2 "^1.3.0"
     micromatch "^4.0.4"
 
-fast-xml-parser@^4.2.5:
+fast-xml-parser@^4.2.7:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.3.2.tgz#761e641260706d6e13251c4ef8e3f5694d4b0d79"
   integrity sha512-rmrXUXwbJedoXkStenj1kkljNF7ugn5ZjR9FJcwmCfcCbtOMDghPajbc+Tck6vE6F5XsDmx+Pr2le9fw8+pXBg==
