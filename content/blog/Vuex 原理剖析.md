@@ -211,7 +211,7 @@ ModuleCollection初始化会调用register，然后在register中path.length = 0
 模块的区分主要是根据path数组来的，如果path.length = 0，那么就是根module，否则就是子module。
 
 store._modules如下，是根据模块的关系构建的树状结构
-![Vuex_modules](images/Vuex_modules.png)
+![Vuex_modules](/images/Vuex_modules.png)
 
 到这，我们有模块结构有了初步的认识，也明白了模块是如何构建起来的。
 
