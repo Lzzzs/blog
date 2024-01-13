@@ -60,7 +60,7 @@ const {
 ```
 我们可以从两个维度去看钩子的含义
 
-## 按照同步和异步分裂
+## 按照同步和异步分类
 以 Sync 开头的钩子都是同步钩子，以 Async 开头的钩子都是异步钩子。
 同步钩子只能通过 tap 去注册事件，并且只能通过 call 调用。
 但是异步钩子可以通过 tap、tapAsync、tapPromise 去注册事件，同时通过 call、callAsync、promise 去调用。
