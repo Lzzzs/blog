@@ -5,14 +5,12 @@ title: Vue-Router 原理剖析-工作流程
 date: 2023-06-13
 ---
 
-### **前言**
+### 前言
 
 本文的目的是从源码角度下去探究`Vue-Router`实际工作的流程
 
 **Vue-Router版本：** `3.6.5`
 **GitHub** 仓库地址：https://github.com/vuejs/vue-router
-
-<!--more-->
 
 ### Vue 与 Vue-Router
 首先我们研究`Vue-Router`的流程，要先明白 `Vue` 与 `Vue-Router`是如何结合起来的

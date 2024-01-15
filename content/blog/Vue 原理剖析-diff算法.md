@@ -11,8 +11,6 @@ date: 2023-06-10
 
 这一节主要看下Vue中diff算法怎么实现的，以及做了哪些优化。
 
-<!--more-->
-
 ### createPatchFunction
 
 createPatchFunction是一个工厂函数，可以接收配置，之后会返回patch函数。这里用了**函数柯里化**的技巧，主要是为了适应多平台的一种优雅解决方案。

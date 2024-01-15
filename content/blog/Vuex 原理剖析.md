@@ -16,8 +16,6 @@ date: 2023-06-25
 - Vuex内部是怎么区分用户是通过mutations修改state，还是手动修改state？
 - mapState等辅助函数是怎么实现的？
 
-
-<!--more-->
 ### store对象怎么被注入到Vue实例中的？
 首先，回顾下在Vue中使用Vuex的方式
 ```js

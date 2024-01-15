@@ -11,8 +11,6 @@ date: 2023-06-16
 
 这也是我们对 `Vue-Router` 的最后一篇文章
 
-<!--more-->
-
 ### 路径切换实例方法
 
 在初始化路由时，我们可以选择mode。其实Vue-Router有三种mode。分别是hash、history、abstract。其中hash和history是我们常用的两种。而abstract是在非浏览器环境下使用的。比如说在node环境下使用Vue-Router。这里我们只讨论hash和history两种mode。
