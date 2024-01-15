@@ -20,7 +20,7 @@ export interface Props {
 }
 
 const { title, date } = Astro.props;
-const formattedDate = new Date(date).toLocaleDateString("en-us", {
+const formattedDate = new Date(date).toLocaleDateString("zh", {
   year: "numeric",
   month: "short",
   day: "numeric",
@@ -28,7 +28,7 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
 ---
 
 <!DOCTYPE html>
-<html class="theme-sleek" lang="en">
+<html class="theme-sleek" lang="zh">
   <head>
     <!-- Global Metadata -->
     <meta charset="utf-8" />
