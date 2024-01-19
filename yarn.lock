@@ -98,13 +98,13 @@
     fast-xml-parser "^4.2.5"
     kleur "^4.1.5"
 
-"@astrojs/sitemap@^1.0.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-1.4.0.tgz#4175fddca292c7d808aba9e8a61879cf58586e11"
-  integrity sha512-uTK77kcg7iTiik+u7rTGG6vK4ZWTfYMaVnFndOVQrLzaE5xivmQgIbVLtlN+xRcME5n/m6vYQFJmogFR+elGCw==
+"@astrojs/sitemap@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.0.5.tgz#f7313c21f4eba2ba6d22936326af70f889c53414"
+  integrity sha512-60eLzNjMza3ABypiQPUC6ElOSZNZeY5CwSwgJ03hfeonl+Db9x12CCzBFdTw7A5Mq+O54xEZVUrR0tB+yWgX8w==
   dependencies:
     sitemap "^7.1.1"
-    zod "^3.17.3"
+    zod "^3.22.4"
 
 "@astrojs/tailwind@^2.1.3":
   version "2.1.3"
@@ -4106,7 +4106,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zod@^3.17.3, zod@^3.20.2:
+zod@^3.17.3, zod@^3.20.2, zod@^3.22.4:
   version "3.22.4"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
   integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
